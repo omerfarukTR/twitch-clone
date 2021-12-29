@@ -31,7 +31,7 @@
 
 ## About The Project
 
-![web page](webpage-photo.png)
+![web page](https://github.com/omerfarukTR/twitch-clone/blob/v1.0/webpage-photo.PNG)
 
 Recently, I have been learning HTML, CSS and Bootstrap.
 I've watched some videos and learned something about them. Now I'm practicing what I've learned by cloning some websites.
