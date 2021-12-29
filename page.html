@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitch|Clone</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav style="z-index: 1000; background-color: #fff;" class="navbar navbar-expand-lg sticky-top border-bottom">
+        <div class="container-fluid">
+            <!--Twitch Logo-->
+            <a class="navbar-brand" href="#">
+                <i class="fab fa-twitch"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar - Left Side -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#" aria-current="page"><h5 class="navbar-left-hover">Following</h5></a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="#" aria-current="page"><h5 class="navbar-left-hover">Browse</h5></a>
+                    </li>
+                    <!-- Left Side Dropdown -->
+                    <li class="nav-item ms-3 dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            <i class="fas fa-ellipsis-v"></i>
+                            <ul style="width: 250px;" class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                                <li><h6>GENERAL</h6></li>
+                                <li><a class="dropdown-item" href="#">About</a></li>
+                                <li><a class="dropdown-item" href="#">Advertisers</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Developers</a></li>
+                                <li><a class="dropdown-item" href="#">Download Apps</a></li>
+                                <li><a class="dropdown-item" href="#">Gift Cars</a></li>
+                                <li><a class="dropdown-item" href="#">IGDB</a></li>
+                                <li><a class="dropdown-item" href="#">Jobs</a></li>
+                                <li><a class="dropdown-item" href="#">Loot Cave - Merch Store</a></li>
+                                <li><a class="dropdown-item" href="#">Music on Twitch</a></li>
+                                <li><a class="dropdown-item" href="#">Partners</a></li>
+                                <li><a class="dropdown-item" href="#">Press</a></li>
+                                <li><a class="dropdown-item" href="#">Turbo</a></li>
+                                <hr>
+                                <li><h6>HELP & LEGAL</h6></li>
+                                <li><a class="dropdown-item" href="#">Accessibility Statement</a></li>
+                                <li><a class="dropdown-item" href="#">Ad Choices</a></li>
+                                <li><a class="dropdown-item" href="#">Community Guidelines</a></li>
+                                <li><a class="dropdown-item" href="#">Cookie Policy</a></li>
+                                <li><a class="dropdown-item" href="#">Help</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                                <li><a class="dropdown-item" href="#">Safety Center</a></li>
+                                <li><a class="dropdown-item" href="#">Security</a></li>
+                                <li><a class="dropdown-item" href="#">Terms</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Navbar - Middle Side -->
+                <form>
+                    <input class="nav-search" type="search" placeholder="Search">
+                    <button class="nav-search-button"><i class="fas fa-search"></i></button>
+                </form>
+                <!-- Navbar - Right Side -->
+                <ul class="navbar-nav ms-auto">   
+                    <!-- Prime Dropdown -->                 
+                    <li class="nav-item ms-2 dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            <i class="fas fa-crown"></i>
+                            <ul style="width: 400px;" class="dropdown-menu dropdown-menu-end p-4" aria-labelledby="navbarDropdown">
+                                <i class="fas fa-times"></i>
+                                <li><a href="#"><h6 style="text-align: center;">Prime Gaming Loot</h6></a></li>
+                                <li>
+                                    <a href="#">
+                                        <h5 class="mt-3 mb-5">Claim With Prime Gaming</h5>
+                                        <img src="https://static.twitchcdn.net/assets/prime-gaming-purple-2018720eb815c4306af7.svg" alt="">
+                                        <p>Support your favorite streamer, plus get monthly games and in-game loot, and loads more with Prime Gaming.</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <button class="purple-button">Start Your Free Trial</button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>Get up to GTA$400,000 this month in GTA Online</h5>
+                                        <img src="https://images-na.ssl-images-amazon.com/images/I/512KpEoOCjL.jpg" alt="">
+                                        <p><small>In-Game Content<br>Rockstar Games Inc</small></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <button class="purple-button">Start Your Free Trial</button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <h5>New World: Thespian Pack</h5>
+                                        <img src="https://images-na.ssl-images-amazon.com/images/I/41z0kGaO49L.jpg" alt="">
+                                        <p><small>In-Game Content<br>Rockstar Games Inc</small></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <button class="purple-button">Start Your Free Trial</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- Notifications Dropdown -->
+                    <li class="nav-item ms-2 dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            <i class="fas fa-inbox"></i>
+                            <ul style="width: 400px; overflow-y:scroll;" class="dropdown-menu dropdown-menu-end p-4" aria-labelledby="navbarDropdown">
+                                <i class="fas fa-times"></i>
+                                <i class="fas fa-cog me-3"></i>
+                                <li><a href="#"><h6>Notifications</h6></a></li>
+                                <li>
+                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link d-block tab-button" id="my-twitch-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">My Twitch</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link d-block tab-button" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">My Channel</button>
+                                        </li>
+                                      </ul>
+                                      <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="my-twitch-tab">
+                                            <div class="row mt-3">
+                                                <div class="text-secondary">MOST RECENT</div>
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-2">
+                                                    <img style="background-color: #e2e2e2; border-radius: 50px; scale: 1.2;" class="mt-3" src="https://d3aqoihi2n8ty8.cloudfront.net/twitch-logo/twitch_uv_glitch_purple.png">
+                                                </div>
+                                                <div class="col-10">
+                                                    <i class="fas fa-times"></i>
+                                                    <p>You have earned new emotes for enabling 2FA! You can find them under “Unlocked” in the picker.</p>
+                                                    <p class="text-secondary small">2 years ago</p>
+                                                </div class="col-10">
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-2">
+                                                    <img style="background-color: #e2e2e2; border-radius: 50px; scale: 1.2;" class="mt-3" src="https://d3aqoihi2n8ty8.cloudfront.net/twitch-logo/twitch_uv_glitch_purple.png">
+                                                </div>
+                                                <div class="col-10">
+                                                    <i class="fas fa-times"></i>
+                                                    <p>You have earned new emotes for enabling 2FA! You can find them under “Unlocked” in the picker.</p>
+                                                    <p class="text-secondary small">2 years ago</p>
+                                                </div class="col-10">
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-2">
+                                                    <img style="background-color: #e2e2e2; border-radius: 50px; scale: 1.2;" class="mt-3" src="https://d3aqoihi2n8ty8.cloudfront.net/twitch-logo/twitch_uv_glitch_purple.png">
+                                                </div>
+                                                <div class="col-10">
+                                                    <i class="fas fa-times"></i>
+                                                    <p>You have earned new emotes for enabling 2FA! You can find them under “Unlocked” in the picker.</p>
+                                                    <p class="text-secondary small">2 years ago</p>
+                                                </div class="col-10">
+                                            </div>
+                                            <div class="row mt-3">
+                                                <div class="col-2">
+                                                    <img style="background-color: #e2e2e2; border-radius: 50px; scale: 1.2;" class="mt-3" src="https://d3aqoihi2n8ty8.cloudfront.net/twitch-logo/twitch_uv_glitch_purple.png">
+                                                </div>
+                                                <div class="col-10">
+                                                    <i class="fas fa-times"></i>
+                                                    <p>You have earned new emotes for enabling 2FA! You can find them under “Unlocked” in the picker.</p>
+                                                    <p class="text-secondary small">2 years ago</p>
+                                                </div class="col-10">
+                                            </div>                                                
+                                        </div>
+                                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                            <div class="m-3">
+                                                <div style="text-align: center;">
+                                                    <img src="https://static.twitchcdn.net/assets/new_to_streaming-67ae285be9a0322d1c8d.svg">
+                                                    <h5 style="border: none;">New to Streaming? Try it out!</h5>
+                                                    <p>Share your hobbies and meet new friends.</p>
+                                                    <button id="notifications-button" class="btn">Go to Creator Dashboard</button>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                      </div>                                      
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- Whispers Dropdown -->
+                    <li class="nav-item ms-2 dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            <i class="far fa-comment-alt"></i>
+                            <ul style="width: 400px;" class="dropdown-menu dropdown-menu-end p-4" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <form>
+                                        <input class="nav-search whispers-search" type="search" placeholder="     Search">
+                                    </form>
+                                </li>
+                                <li class="border-bottom pb-3">
+                                    <a style="cursor: pointer;" href="#">
+                                        <div class="row">
+                                            <div class="col-2 text-center align-items-center d-flex pe-0 ps-4">
+                                                <i style="scale: 2.5;" class="fas fa-user-circle"></i>
+                                            </div>
+                                            <div class="col-10 ps-0">
+                                                <h6>etvba8gisele</h6>
+                                                <p style="overflow:hidden; white-space: nowrap; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, hic.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- Bit Dropdown -->
+                    <li class="nav-item ms-2 dropdown">
+                        <a style="width: fit-content;" class="nav-link btn rounded nav-search" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            <i class="far fa-gem me-1"></i><b> Get Bits</b>
+                            <ul style="width: 400px;" class="dropdown-menu dropdown-menu-end p-4" aria-labelledby="navbarDropdown">
+                                <li><a href="#"></a>
+                                    <h6>Join the party with Bits</h6>
+                                    <p>Celebrate big moments and support your favorite streamers with special animated emotes!</p>
+                                </li>
+                                <li>
+                                    <img src="https://d3aqoihi2n8ty8.cloudfront.net/bits-card/intro/light/bits-new-user-light.gif">
+                                    <button class="purple-button mt-4">First-time Purchaser Discount</button>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <!-- Profile Dropdown -->
+                    <li class="nav-item ms-2 dropdown">
+                        <a style="width: fit-content;" class="nav-link btn rounded nav-profile" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            <i style="scale: 2.0;" class="fas fa-user-circle"></i>
+                            <ul style="width: 250px;" class="dropdown-menu dropdown-menu-end p-4" aria-labelledby="navbarDropdown">
+                                <li class="row border-bottom"><a href=""></a>
+                                    <div class="col-2">
+                                        <i style="scale: 2.0;" class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="m-0"><b>Kingomero</b></p>
+                                        <i class="fas fa-circle text-warning"></i>Online
+                                    </div>
+                                </li>
+                                <li class="border-bottom py-3">
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;">
+                                        <i class="fas fa-user-minus"></i> Channel
+                                    </a>
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;">
+                                        <i class="fas fa-sliders-h"></i> Video Producer
+                                    </a>
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;">
+                                        <i class="fas fa-chart-bar"></i> Creator Dashboard
+                                    </a>
+                                </li>
+                                <li class="border-bottom py-3">
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;">
+                                        <i class="fas fa-user-friends"></i> Friends
+                                    </a>
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;">
+                                        <i class="far fa-star"></i> Subscriptions
+                                    </a>
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;">
+                                        <i class="fas fa-box"></i> Drops
+                                    </a>
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;">
+                                        <i class="fas fa-wallet"></i> Wallet
+                                    </a>
+                                </li>
+                                <li class="border-bottom py-3">
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;">
+                                        <i class="fas fa-users-cog"></i> Settings
+                                    </a>
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;">
+                                        <i class="fas fa-globe"></i> Language
+                                    </a>
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;">
+                                        <i class="far fa-moon"></i> Dark Mode
+                                    </a>
+                                </li>
+                                <li class="py-3">
+                                    <a href="#" class="d-block profile-dropdown p-1" style="cursor: pointer;"   >
+                                        <i class="fas fa-sign-out-alt"></i> Log Out
+                                    </a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Main -->
+    <main class="container-fluid">
+        <div class="row">
+            <!-- Recommended Channels -->
+            <aside style="position:fixed; height: 100% !important; top: 65px; background-color: #f1f1f1;" class="col-2 py-3 px-0">
+                <div class="col-12 mb-4 px-3">
+                    <b> RECOMMENDED CHANNELS</b>
+                    <button class="btn aside-collapse"><i class="fas fa-chevron-left float-end"></i></button>
+                </div>
+                <div class="row m-0">
+                    <a href="#">
+                        <div class="row aside-profile">
+                            <div class="col-2 position-relative pt-1">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/50e4e7b2-ae1c-43dd-ae3a-243de06a9034-profile_image-70x70.png" class="d-block position-absolute rounded-circle my-auto w-75">
+                            </div>
+                            <div class="col-6">
+                                <b>k3soju</b>
+                                <br>
+                                <span class="text-secondary">Teamfight Tactics</span>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="fas fa-circle text-danger"></i> 17.5k
+                            </div>
+                        </div>                                         
+                    </a>
+                </div>
+                <div class="row m-0">
+                    <a href="#">
+                        <div class="row aside-profile">
+                            <div class="col-2 position-relative pt-1">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/fe78f7a9-49e4-486e-a80e-d05d3c16da97-profile_image-70x70.png" class="d-block position-absolute rounded-circle my-auto w-75">
+                            </div>
+                            <div class="col-6">
+                                <b>Bahtam</b>
+                                <br>
+                                <span class="text-secondary">Teamfight Tactics</span>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="fas fa-circle text-danger"></i> 368
+                            </div>
+                        </div>                                         
+                    </a>
+                </div>
+                <div class="row m-0">
+                    <a href="#">
+                        <div class="row aside-profile">
+                            <div class="col-2 position-relative pt-1">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/6f539ccc-a7db-430d-8010-829961add1e1-profile_image-70x70.png" class="d-block position-absolute rounded-circle my-auto w-75">
+                            </div>
+                            <div class="col-6">
+                                <b>Sp4zie</b>
+                                <br>
+                                <span class="text-secondary">Teamfight Tactics</span>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="fas fa-circle text-danger"></i> 1.7k
+                            </div>
+                        </div>                                         
+                    </a>
+                </div>
+                <div class="row m-0">
+                    <a href="#">
+                        <div class="row aside-profile">
+                            <div class="col-2 position-relative pt-1">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/7535af1c-ca60-486f-9566-8c74e651aafa-profile_image-70x70.png" class="d-block position-absolute rounded-circle my-auto w-75">
+                            </div>
+                            <div class="col-6">
+                                <b>bebe872</b>
+                                <br>
+                                <span class="text-secondary">Teamfight Tactics</span>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="fas fa-circle text-danger"></i> 1.1k
+                            </div>
+                        </div>                                         
+                    </a>
+                </div>                
+                <div class="row m-0">
+                    <a href="#">
+                        <div class="row aside-profile">
+                            <div class="col-2 position-relative pt-1">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/483a37ac-58fd-4e2f-8dc3-2c68a0164112-profile_image-70x70.png" class="d-block position-absolute rounded-circle my-auto w-75">
+                            </div>
+                            <div class="col-6">
+                                <b>Caedrel</b>
+                                <br>
+                                <span class="text-secondary">League of Legends</span>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="fas fa-circle text-danger"></i> 3.1k
+                            </div>
+                        </div>                                         
+                    </a>
+                </div>                
+                <div class="row m-0">
+                    <a href="#">
+                        <div class="row aside-profile">
+                            <div class="col-2 position-relative pt-1">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/a28b0d37-81d0-415a-8ed8-1a1f998ea26d-profile_image-70x70.png" class="d-block position-absolute rounded-circle my-auto w-75">
+                            </div>
+                            <div class="col-6">
+                                <b>Fextralife</b>
+                                <br>
+                                <span class="text-secondary">Genshin Impact</span>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="fas fa-circle text-danger"></i> 10.5k
+                            </div>
+                        </div>                                         
+                    </a>
+                </div>
+                <div class="col-10 bg-white offset-1 rounded p-2 mt-4">
+                    <img src="assets/aside-heart.PNG">
+                    <h4>Follow your favourites!</h4>
+                    <p>They'll show up here for easy access!</p>
+                </div>
+                <div style="top:250px;" class="position-relative p-2 border-top">
+                    <form>
+                        <input class="nav-search whispers-search w-100" type="search" placeholder="     Search to Add Friends">
+                    </form>
+                </div>
+            </aside>
+            <section style="margin-left: 350px; width: 80%;" class=" mt-3 overflow-hidden">
+                <!-- Jumbotron -->
+                <div class="card mx-auto mb-3 w-50 rounded-0" id="jumbotron">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <a href="#"><img width="100%" src="assets/zizaran.PNG" class="img-fluid rounded-start"></a>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="card-body">
+                          <div class="card-text row">
+                              <div class="col-4">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/zizaran-profile_image-d534b9791c469a48-150x150.png" class="rounded-circle w-100">
+                              </div>
+                              <div class="col-8">
+                                <a class="text-hover-purple" href="#"><b>Zizaran</b></a><br>
+                                <a class="text-hover-purple" href="#">Path of Exile</a>
+                              </div>
+                              <div class="col-12 my-2">
+                                <a class="btn text-black-50 grey-button">English</a>
+                              </div>
+                              <div class="col-12">
+                                <a class="btn text-black-50 grey-button">Extansion Enhanced</a>
+                              </div>
+                          <p class="card-text mt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Recommended Channels In Section -->
+                <div class="row mt-5 pb-3 border-bottom">
+                    <p><h5>Live channels we think you'll like</h5></p>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 19rem;">
+                        <a href="#">
+                            <img src="assets/rc1.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-body row">
+                            <div class="col-2 p-0">
+                                <a href="#">
+                                    <img src="assets/scarra.jpeg" class="rounded-circle w-100">
+                                </a>
+                            </div>
+                            <div class="col-8 overflow-hidden">
+                                <a class="text-hover-purple" href="#">
+                                    <b style="white-space: nowrap;">me and you baby aint nothing but mammals so lets find a low interest rate housing sector to live together forever at</b>
+                                </a>
+                                <a href="#" class="text-secondary text-hover-purple">Scarra</a><br>
+                                <a href="#" class="text-secondary text-hover-purple">Escape from Tarkov</a>
+                                <br>
+                                <a class="btn text-black-50 grey-button">English</a>
+                                <a class="btn text-black-50 grey-button">Drops Enabled</a>
+                            </div>
+                            <div class="col-2 text-end pe-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 19rem;">
+                        <a href="#">
+                            <img src="assets/rc2.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-body row">
+                            <div class="col-2 p-0">
+                                <a href="#">
+                                    <img src="assets/keanelol.png" class="rounded-circle w-100">
+                                </a>
+                            </div>
+                            <div class="col-8 overflow-hidden">
+                                <a class="text-hover-purple" href="#">
+                                    <b style="white-space: nowrap;">TSM FTX Keane | NA 1237LP start !yt !blitz</b>
+                                </a>
+                                <a href="#" class="text-secondary text-hover-purple">keanelol</a><br>
+                                <a href="#" class="text-secondary text-hover-purple">Teamfight Tactics</a>
+                                <br>
+                                <a class="btn text-black-50 grey-button">English</a>
+                            </div>
+                            <div class="col-2 text-end pe-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 19rem;">
+                        <a href="#">
+                            <img src="assets/rc3.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-body row">
+                            <div class="col-2 p-0">
+                                <a href="#">
+                                    <img src="assets/bahtam.png" class="rounded-circle w-100">
+                                </a>
+                            </div>
+                            <div class="col-8 overflow-hidden">
+                                <a class="text-hover-purple" href="#">
+                                    <b style="white-space: nowrap;">TFT YUMURTA ÇEKİLİŞİ! !çekiliş !youtube !comp</b>
+                                </a>
+                                <a href="#" class="text-secondary text-hover-purple">Bahtam</a><br>
+                                <a href="#" class="text-secondary text-hover-purple">Teamfight Tactics</a>
+                                <br>
+                                <a class="btn text-black-50 grey-button">Turkish</a>
+                            </div>
+                            <div class="col-2 text-end pe-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 19rem;">
+                        <a href="#">
+                            <img src="assets/rc4.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-body row">
+                            <div class="col-2 p-0">
+                                <a href="#">
+                                    <img src="assets/39daph.png" class="rounded-circle w-100">
+                                </a>
+                            </div>
+                            <div class="col-8 overflow-hidden">
+                                <a class="text-hover-purple" href="#">
+                                    <b style="white-space: nowrap;">HELLAWICKED I am esports HELLAWICKED</b>
+                                </a>
+                                <a href="#" class="text-secondary text-hover-purple">39daph</a><br>
+                                <a href="#" class="text-secondary text-hover-purple">Art</a>
+                                <br>
+                                <a class="btn text-black-50 grey-button">Depression</a>
+                                <a class="btn text-black-50 grey-button">Standup</a>
+                            </div>
+                            <div class="col-2 text-end pe-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 19rem;">
+                        <a href="#">
+                            <img src="assets/rc5.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-body row">
+                            <div class="col-2 p-0">
+                                <a href="#">
+                                    <img src="assets/xQcOW.jpeg" class="rounded-circle w-100">
+                                </a>
+                            </div>
+                            <div class="col-8 overflow-hidden">
+                                <a class="text-hover-purple" href="#">
+                                    <b title="GRANDIOSE INSANE CONTENT VIRTUOSO GIVES THE PEOPLE WHAT THEY NEED THE MOST IN THESE TRYING TIMES: GARBAGE CONTENT NO ONE ASKED FOR (REALLL)" style="white-space: nowrap;">GRANDOISE INSANE CONTENT VIRTUOSO GIVES...</b>
+                                </a>
+                                <a href="#" class="text-secondary text-hover-purple">xQcOW</a><br>
+                                <a href="#" class="text-secondary text-hover-purple">Grand Theft Auto V</a>
+                                <br>
+                                <a class="btn text-black-50 grey-button">English</a>
+                            </div>
+                            <div class="col-2 text-end pe-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div>                          
+                        </div>
+                    </div>                    
+                </div>
+                <div class="row my-5 pb-3 border-bottom">
+                    <p>
+                        <h5><a class="directory-link" href="#">Categories</a> we think you'll like</h5>
+                    </p>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 12rem;">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/513143-188x250.jpg" class="card-img-top">
+                        <div class="row pt-1 mb-3">
+                            <div class="col-10 pe-0">
+                                <a href="#"><h6 class="card-title text-hover-purple game-names">Teamfight Tactics</h6></a>
+                                <a href="#" class="text-secondary text-hover-purple"><p class="card-text">58.1K viewers</p></a>  
+                                <a class="btn text-black-50 grey-button">Strategy</a> 
+                            </div>
+                            <div class="col-1 px-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 12rem;">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/509658-188x250.jpg" class="card-img-top">
+                        <div class="row pt-1 mb-3">
+                            <div class="col-10 pe-0">
+                                <a href="#"><h6 class="card-title game-names text-hover-purple">Just Chatting</h6></a>
+                                <a href="#" class="text-secondary text-hover-purple"><p class="card-text">172K viewers</p></a>
+                                <a class="btn text-black-50 grey-button">IRL</a> 
+                            </div>
+                            <div class="col-1 px-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 12rem;">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/21779-188x250.jpg" class="card-img-top">
+                        <div class="row pt-1 mb-3">
+                            <div class="col-10 pe-0">
+                                <a href="#"><h6 class="card-title game-names text-hover-purple">League of Legends</h6></a>
+                                <a href="#" class="text-secondary text-hover-purple"><p class="card-text">120K viewers</p></a>  
+                                <a class="btn text-black-50 grey-button">MOBA</a> 
+                                <a class="btn text-black-50 grey-button">Action</a> 
+                            </div>
+                            <div class="col-1 px-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 12rem;">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-188x250.jpg" class="card-img-top">
+                        <div class="row pt-1 mb-3">
+                            <div class="col-10 pe-0">
+                                <a href="#"><h6 class="card-title game-names text-hover-purple">Minecraft</h6></a>
+                                <a href="#" class="text-secondary text-hover-purple"><p class="card-text">31.6K viewers</p></a>  
+                                <a class="btn text-black-50 grey-button">Adventure Game</a> 
+                            </div>
+                            <div class="col-1 px-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 12rem;">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/32982_IGDB-285x380.jpg" class="card-img-top">
+                        <div class="row pt-1 mb-3">
+                            <div class="col-10 pe-0">
+                                <a href="#"><h6 class="card-title game-names text-hover-purple">Grand Theft Auto V</h6></a>
+                                <a href="#" class="text-secondary text-hover-purple"><p class="card-text">109K viewers</p> </a> 
+                                <a class="btn text-black-50 grey-button">Adventur Game</a> 
+                                <a class="btn text-black-50 grey-button">FPS</a> 
+                            </div>
+                            <div class="col-1 px-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 12rem;">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/491931_IGDB-285x380.jpg" class="card-img-top">
+                        <div class="row pt-1 mb-3">
+                            <div class="col-10 pe-0">
+                                <a href="#"><h6 class="card-title game-names text-hover-purple">Escape From Tarkov</h6></a>
+                                <a href="#" class="text-secondary text-hover-purple"><p class="card-text">342K viewers</p></a>  
+                                <a class="btn text-black-50 grey-button">Simulation</a> 
+                                <a class="btn text-black-50 grey-button">FPS</a> 
+                            </div>
+                            <div class="col-1 px-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="card rounded-0 border-0 mx-auto" style="width: 12rem;">
+                        <img src="https://static-cdn.jtvnw.net/ttv-boxart/511224-285x380.jpg" class="card-img-top">
+                        <div class="row pt-1 mb-3">
+                            <div class="col-10 pe-0">
+                                <a href="#"><h6 class="card-title game-names text-hover-purple">Apex Legends</h6></a>
+                                <a href="#" class="text-secondary text-hover-purple"><p class="card-text">34.6K viewers</p></a>  
+                                <a class="btn text-black-50 grey-button">FPS</a> 
+                                <a class="btn text-black-50 grey-button">Shooter</a> 
+                            </div>
+                            <div class="col-1 px-0">
+                                <a href="#" class="btn button-hover px-2 py-1"><i class="fas fa-ellipsis-v"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>        
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
