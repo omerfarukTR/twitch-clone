@@ -15,6 +15,18 @@
                 <li><a href="#built-with">Built With</a></li>
             </ul>
         </li>
+        <li>
+            <a href="#getting-started">Getting Started</a>
+            <ul>
+                <li><a href="#installation">Installation</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#roadmap">Roadmap</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
 </details>
 
 ## About The Project
@@ -69,7 +81,7 @@ I also used a lot of icons from [fontawesome.com](https://www.fontawesome.com/) 
 
 My e-mail: omertopcu6116@gmail.com
 
-Project Link: [Click Here](https://github.com/omerfarukTR/twitch-clone.git)
+Project Link: [https://github.com/omerfarukTR/twitch-clone.git](https://github.com/omerfarukTR/twitch-clone.git)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
